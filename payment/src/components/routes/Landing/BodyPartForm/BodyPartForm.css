@@ -1,0 +1,391 @@
+/* src/components/routes/LandingPage/BodyPartForm/BodyPartForm.css */
+
+
+.above-form{
+    position: relative;
+    height: 40vh;
+}
+
+.yoyo{
+    height: 140vh;
+    width:100%;
+    z-index: -1;
+}
+
+.form-header{
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    top:3rem;
+    left:5rem;
+    margin:auto;
+
+}
+
+.logo{
+    height: 3rem;
+
+}
+
+
+
+.linkis{
+    color:red;
+    text-decoration: none;
+    font-size: large;
+}
+
+.linkis:hover{
+    color: black;
+}
+
+
+.form-heading{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+
+
+.container-payment{
+    height: auto;
+    position: relative;
+
+}
+
+
+.form-payment{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: -5rem;
+    text-align: left;
+    font-size: large;
+    border: 1px solid ;
+    border: none;
+    width:80vw;
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: white;
+}
+
+.basic{
+    margin: auto;
+    margin-bottom: 2rem;
+    
+}
+
+label{
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+}
+
+
+.datee{
+    margin-left: 5.1rem;
+}
+
+.tags{
+    margin-left: 1rem;
+    width: 9.5rem;
+}
+
+input{
+    padding: 0.5rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    width: 9rem;
+    margin: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.purchase{
+    width:7.75rem;
+}
+
+
+select{
+    padding: 0.25rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 6.5rem;
+
+}
+.gender{
+    width:9.5rem;
+}
+
+.based{
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+
+.mid-heading{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.types{
+    margin: auto;
+    margin-left: 19rem;
+    cursor: pointer;
+}
+
+
+.couponn{
+    margin: auto;
+    margin-bottom: 3rem;
+
+}
+
+.coupon{
+    width:8rem;
+
+}
+
+.total{
+    margin:auto ;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+
+}
+
+.submit-button{
+    width: 30%;
+    padding: 1rem;
+    margin: auto;
+    margin-top: -1.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid;
+    border-color: brown;
+    border-radius: 1rem;
+    font-size: large;
+    background-color: white;
+    color: brown;
+}
+
+.submit-button:hover{
+    background-color: brown;
+    color: white;
+}
+
+
+.website{
+    margin:auto;
+    border: 1px solid;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.75rem;
+    width: 11rem;
+    background-color: white;
+    margin-bottom: 3rem;
+}
+
+/* mobile */
+
+
+@media only screen and (max-width: 600px) {
+
+    
+
+.above-form{
+    position: relative;
+    height: 25vh;
+}
+
+.yoyo{
+    height: 75vh;
+    width:100%;
+    z-index: -1;
+}
+
+.form-header{
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    top:3rem;
+    left:2rem;
+    margin:auto;
+
+}
+
+.logo{
+    height: 3rem;
+
+}
+
+.linkis{
+    color:red;
+    text-decoration: none;
+    font-size: large;
+}
+
+.linkis:hover{
+    color: black;
+}
+
+
+.form-heading{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+
+
+.container-payment{
+    height: auto;
+    position: relative;
+
+}
+
+
+.form-payment{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    text-align: left;
+    font-size: 1.1rem;
+    border: 1px solid ;
+    border: none;
+    width:70vw;
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: white;
+}
+
+label{
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.name{
+    width:8rem;
+    margin-left: 1.5rem;
+}
+
+.phoneNumber{
+    width:7.2rem;
+    margin-left: 1.4rem;
+}
+
+.email{
+    width:8.25rem;
+    margin-left: 1.4rem;
+}
+
+.basic{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+input{
+    padding: 0.5rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    width: 6rem;
+}
+
+
+select{
+    padding: 0.25rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    width: 6.5rem;
+
+}
+
+.datee{
+    margin-left: 1rem;
+}
+
+.gender{
+    width: 7.4rem;
+    margin-left: 2.5rem;
+}
+
+.purchase{
+    width:6.5rem;
+
+}
+
+
+.tags{
+    margin-left: 3.8rem;
+    width: 6.3rem;
+}
+
+.based{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+}
+
+
+.mid-heading{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.types{
+    margin: auto;
+}
+
+
+
+.total{
+    margin:auto ;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+
+}
+
+.submit-button{
+    width: 14rem;
+    padding: 1rem;
+    margin: auto;
+    border: 1px solid;
+    border-color: brown;
+    border-radius: 1rem;
+    font-size: large;
+    background-color: white;
+    color: brown;
+}
+
+.submit-button:hover{
+    background-color: brown;
+    color: white;
+}
+
+
+.website{
+    margin:auto;
+    padding: 0.75rem;
+    margin-bottom: 3rem;
+}
+}
+
