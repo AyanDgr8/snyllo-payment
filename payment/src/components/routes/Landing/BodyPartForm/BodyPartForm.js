@@ -84,7 +84,19 @@ const BodyPartForm = () => {
       resetForm();
     } catch (error) {
       console.error('Error submitting form:', error);
-      alert('Error submitting the form. Please try again.');
+      if (
+        error.response &&
+        error.response.data &&
+        error.response.data.error &&
+        (error.response.data.error.includes('duplicate key error') ||
+          error.response.data.error.includes('duplicate key email'))
+      ) {
+        alert(
+          'The phone number or email you entered is already in use. Please enter different information.'
+        );
+      } else {
+        alert('Error submitting the form. Please try again.');
+      }
       setSubmitStatus('error');
     }
   };
