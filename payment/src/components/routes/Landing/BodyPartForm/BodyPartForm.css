@@ -1,6 +1,5 @@
 /* src/components/routes/LandingPage/BodyPartForm/BodyPartForm.css */
 
-
 .above-form{
     position: relative;
     height: 40vh;
@@ -28,7 +27,6 @@
 }
 
 
-
 .linkis{
     color:red;
     text-decoration: none;
@@ -39,14 +37,12 @@
     color: black;
 }
 
-
 .form-heading{
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     font-weight: 700;
     margin: auto;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
-
 
 
 .container-payment{
@@ -54,7 +50,6 @@
     position: relative;
 
 }
-
 
 .form-payment{
     position: relative;
@@ -67,45 +62,41 @@
     font-size: large;
     border: 1px solid ;
     border: none;
-    width:80vw;
+    width:50vw;
     border-radius: 1rem;
     padding: 2rem;
     background-color: white;
 }
 
-.basic{
-    margin: auto;
-    margin-bottom: 2rem;
-    
-}
 
 label{
     margin: auto;
-    margin-bottom: 2rem;
-    margin-left: 5rem;
 }
 
-
-.datee{
-    margin-left: 5.1rem;
+label.question-field{
+    font-size: 1.25rem;
+    margin-bottom:2rem;
 }
 
-.tags{
-    margin-left: 1rem;
-    width: 9.5rem;
-}
 
 input{
     padding: 0.5rem;
     border: 1px solid;
     border-radius: 0.5rem;
-    width: 9rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 16rem;
     margin: auto;
-    margin-left: 1rem;
-    margin-right: 1rem;
 }
-.purchase{
-    width:7.75rem;
+
+label.input-field{
+    display: flex;
+    justify-content: flex-start;
+    margin:  auto auto 1rem 8rem;
+}
+
+input.types{
+    margin-right: -5rem;
 }
 
 
@@ -113,20 +104,11 @@ select{
     padding: 0.25rem;
     border: 1px solid;
     border-radius: 0.5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    width: 6.5rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 17rem;
 
 }
-.gender{
-    width:9.5rem;
-}
-
-.based{
-    margin: auto;
-    margin-bottom: 2rem;
-}
-
 
 .mid-heading{
     font-size: 2.2rem;
@@ -136,34 +118,23 @@ select{
     margin-top: 3rem;
 }
 
-.types{
-    margin: auto;
-    margin-left: 19rem;
-    cursor: pointer;
-}
-
 
 .couponn{
     margin: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 
 }
 
-.coupon{
-    width:8rem;
-
-}
 
 .total{
     margin:auto ;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
-    margin-top: -1rem;
 
 }
 
 .submit-button{
-    width: 30%;
+    width: 40%;
     padding: 1rem;
     margin: auto;
     margin-top: -1.5rem;
@@ -181,7 +152,6 @@ select{
     color: white;
 }
 
-
 .website{
     margin:auto;
     border: 1px solid;
@@ -195,7 +165,6 @@ select{
 
 /* mobile */
 
-
 @media only screen and (max-width: 600px) {
 
     
@@ -206,20 +175,27 @@ select{
 }
 
 .yoyo{
-    height: 75vh;
-    width:100%;
-    z-index: -1;
+    height: 150vh;
+    width:200vw;
+}
+
+.form-payment{
+    font-size: 1.1rem;
+    margin: auto;
+    width:70vw;
 }
 
 .form-header{
-    position:absolute;
-    display: flex;
-    flex-direction: row;
-    top:3rem;
-    left:2rem;
-    margin:auto;
-
+    left: 2rem;
+    top: 3rem;
 }
+
+.form-heading{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin:auto auto 2rem;
+}
+
 
 .logo{
     height: 3rem;
@@ -237,6 +213,19 @@ select{
 }
 
 
+.container-payment{
+    height: auto;
+    position: relative;
+
+}
+
+.form-payment{
+    margin: auto;
+    font-size: 1.1rem;
+    width:70vw;
+}
+
+
 .form-heading{
     font-size: 1.5rem;
     font-weight: 700;
@@ -244,148 +233,69 @@ select{
     margin-bottom: 2rem;
 }
 
-
-
-.container-payment{
-    height: auto;
-    position: relative;
-
-}
-
-
-.form-payment{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: auto;
-    text-align: left;
-    font-size: 1.1rem;
-    border: 1px solid ;
-    border: none;
-    width:70vw;
-    border-radius: 1rem;
-    padding: 2rem;
-    background-color: white;
-}
-
 label{
     margin: auto;
-    margin-bottom: 2rem;
-    margin-left: 1rem;
 }
 
-.name{
-    width:8rem;
-    margin-left: 1.5rem;
-}
-
-.phoneNumber{
-    width:7.2rem;
-    margin-left: 1.4rem;
-}
-
-.email{
-    width:8.25rem;
-    margin-left: 1.4rem;
-}
-
-.basic{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+label.question-field{
+    font-size: 1rem;
+    margin-top:1rem;
 }
 
 
 input{
     padding: 0.5rem;
-    border: 1px solid;
-    border-radius: 0.5rem;
-    width: 6rem;
+    width: 10rem;
+    margin: auto;
+}
+
+label.input-field{
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem auto 1rem -2rem;
+}
+
+input.types{
+    margin: auto;
 }
 
 
 select{
-    padding: 0.25rem;
-    border: 1px solid;
-    border-radius: 0.5rem;
-    margin-left: 1rem;
-    width: 6.5rem;
+    margin-top: 0.5rem;
+    width: 11rem;
 
 }
-
-.datee{
-    margin-left: 1rem;
-}
-
-.gender{
-    width: 7.4rem;
-    margin-left: 2.5rem;
-}
-
-.purchase{
-    width:6.5rem;
-
-}
-
-
-.tags{
-    margin-left: 3.8rem;
-    width: 6.3rem;
-}
-
-.based{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    margin-top: -1rem;
-}
-
 
 .mid-heading{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin: auto;
-    margin-bottom: 2rem;
-    margin-top: 3rem;
+    margin: 2rem auto 1.5rem;
 }
 
-.types{
-    margin: auto;
-}
 
+.couponn{
+    margin: -1rem auto 1rem;
+
+}
 
 
 .total{
-    margin:auto ;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
+    margin:auto auto 1rem ;
+    font-size: 1.4rem;
 
 }
 
 .submit-button{
-    width: 14rem;
-    padding: 1rem;
-    margin: auto;
-    border: 1px solid;
-    border-color: brown;
-    border-radius: 1rem;
-    font-size: large;
-    background-color: white;
-    color: brown;
+    width: 75%;
+    padding: 0.75rem;
+    margin: -2rem auto -1rem;
 }
-
-.submit-button:hover{
-    background-color: brown;
-    color: white;
-}
-
 
 .website{
-    margin:auto;
+    margin:0 auto 3rem;
     padding: 0.75rem;
     margin-bottom: 3rem;
 }
 }
+
 

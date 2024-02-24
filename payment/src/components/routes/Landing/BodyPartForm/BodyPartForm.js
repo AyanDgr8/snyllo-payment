@@ -174,8 +174,7 @@ const BodyPartForm = () => {
               <div className='form-heading'>
                 <div className='form-line1'>Book Your Appointment</div>
               </div>
-              <div className='basic'>
-                <label>
+                <label className='question-field'>
                   Name
                   <input 
                   type="text" 
@@ -187,7 +186,7 @@ const BodyPartForm = () => {
                   required  
                   />
                 </label>
-                <label>
+                <label className='question-field'>
                   Contact
                   <input 
                   type="text" 
@@ -200,7 +199,7 @@ const BodyPartForm = () => {
                   required
                   />
                 </label>
-                <label>
+                <label className='question-field'>
                   Email
                   <input 
                   type="email" 
@@ -212,10 +211,8 @@ const BodyPartForm = () => {
                   required
                   />
                 </label>
-              </div>
 
-              <div className='based'>
-                <label>
+                <label className='question-field'>
                   Gender
                   <select
                       type="text"
@@ -231,7 +228,7 @@ const BodyPartForm = () => {
                     <option value="others">Others</option>
                   </select>
                 </label>
-                <label>
+                <label className='question-field'>
                   Choose One
                 <select
                     type="text"
@@ -246,7 +243,7 @@ const BodyPartForm = () => {
                   <option value="permanent">Package</option>
                 </select>
                 </label>
-                <label className='datee'>
+                <label className='datee question-field'>
                   Date
                 <input 
                   type="date" 
@@ -257,12 +254,11 @@ const BodyPartForm = () => {
                   required
                 />
                 </label>
-              </div>
 
               <h2 className='mid-heading'>Our Services</h2>
 
               {availableBodyParts?.[formData.gender]?.[formData.purchaseType]?.map(part => (
-                <label key={part}>
+                <label key={part} className='input-field'>
                   <input 
                     type="checkbox" 
                     className='types'
@@ -274,7 +270,7 @@ const BodyPartForm = () => {
                 </label>
               ))}
               <br /><br />
-              <label className='couponn'>
+              <label className='couponn question-field'>
                 Coupon
                   <input 
                   type="text" 
