@@ -8,7 +8,7 @@
 .yoyo{
     height: 140vh;
     width:100%;
-    z-index: -1;
+    z-index: -1000;
 }
 
 .form-header{
@@ -26,19 +26,8 @@
 
 }
 
-
-.linkis{
-    color:red;
-    text-decoration: none;
-    font-size: large;
-}
-
-.linkis:hover{
-    color: black;
-}
-
 .form-heading{
-    font-size: 3.2rem;
+    font-size: 50px;
     font-weight: 700;
     margin: auto;
     margin-bottom: 2rem;
@@ -134,8 +123,8 @@ select{
 }
 
 .submit-button{
-    width: 40%;
-    padding: 1rem;
+    width: 30%;
+    padding: 0.5rem;
     margin: auto;
     margin-top: -1.5rem;
     margin-bottom: 1rem;
@@ -150,6 +139,19 @@ select{
 .submit-button:hover{
     background-color: brown;
     color: white;
+}
+
+
+
+
+.linkis{
+    color:red;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.linkis:hover{
+    color: black;
 }
 
 .website{
@@ -167,135 +169,125 @@ select{
 
 @media only screen and (max-width: 600px) {
 
-    
+    .above-form{
+        position: relative;
+        height: 20vh;
+    }
 
-.above-form{
-    position: relative;
-    height: 25vh;
-}
+    .yoyo{
+        height: 150vh;
+        width:200vw;
+    }
 
-.yoyo{
-    height: 150vh;
-    width:200vw;
-}
+    .form-payment{
+        font-size: 1.1rem;
+        margin: auto;
+        width:70vw;
+    }
 
-.form-payment{
-    font-size: 1.1rem;
-    margin: auto;
-    width:70vw;
-}
+    .form-header{
+        left: 2rem;
+        top: 3rem;
+    }
 
-.form-header{
-    left: 2rem;
-    top: 3rem;
-}
-
-.form-heading{
-    font-size: 1.6rem;
-    font-weight: 700;
-    margin:auto auto 2rem;
-}
+    .form-heading{
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin:auto auto 2rem;
+    }
 
 
-.logo{
-    height: 3rem;
+    .logo{
+        height: 3rem;
 
-}
-
-.linkis{
-    color:red;
-    text-decoration: none;
-    font-size: large;
-}
-
-.linkis:hover{
-    color: black;
-}
+    }
 
 
-.container-payment{
-    height: auto;
-    position: relative;
+    .container-payment{
+        height: auto;
+        position: relative;
 
-}
+    }
 
-.form-payment{
-    margin: auto;
-    font-size: 1.1rem;
-    width:70vw;
-}
-
-
-.form-heading{
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: auto;
-    margin-bottom: 2rem;
-}
-
-label{
-    margin: auto;
-}
-
-label.question-field{
-    font-size: 1rem;
-    margin-top:1rem;
-}
+    .form-payment{
+        margin: auto;
+        font-size: 1.1rem;
+        width:70vw;
+    }
 
 
-input{
-    padding: 0.5rem;
-    width: 10rem;
-    margin: auto;
-}
+    .form-heading{
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
 
-label.input-field{
-    display: flex;
-    justify-content: flex-start;
-    margin: 1rem auto 1rem -2rem;
-}
+    label{
+        margin: auto;
+    }
 
-input.types{
-    margin: auto;
-}
-
-
-select{
-    margin-top: 0.5rem;
-    width: 11rem;
-
-}
-
-.mid-heading{
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 2rem auto 1.5rem;
-}
+    label.question-field{
+        font-size: 1rem;
+        margin-top:1rem;
+    }
 
 
-.couponn{
-    margin: -1rem auto 1rem;
+    input{
+        padding: 0.5rem;
+        width: 10rem;
+        margin: auto;
+    }
 
-}
+    label.input-field{
+        display: flex;
+        justify-content: flex-start;
+        margin: 1rem auto 1rem -1rem;
+    }
+
+    input.types{
+        margin-right: -2rem;
+    }
 
 
-.total{
-    margin:auto auto 1rem ;
-    font-size: 1.4rem;
+    select{
+        margin-top: 0.5rem;
+        width: 11rem;
 
-}
+    }
 
-.submit-button{
-    width: 75%;
-    padding: 0.75rem;
-    margin: -2rem auto -1rem;
-}
+    .mid-heading{
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 2rem auto 1.5rem;
+    }
 
-.website{
-    margin:0 auto 3rem;
-    padding: 0.75rem;
-    margin-bottom: 3rem;
-}
+
+    .couponn{
+        margin: -1rem auto 1rem;
+
+    }
+
+    .total{
+        margin:auto auto 1rem ;
+        font-size: 1.4rem;
+
+    }
+
+    .submit-button{
+        width: 60%;
+        padding: 0.5rem;
+        margin: -2rem auto -1rem;
+        font-size: 1rem;
+        background-color: brown;
+        color: white;
+    }
+
+    .website{
+        margin:0 auto 3rem;
+        padding: 0.75rem;
+        margin-bottom: 3rem;
+    }
 }
 
 
